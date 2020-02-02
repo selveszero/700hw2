@@ -5,7 +5,8 @@ In parse_command function, before doing anything else, I first check if a user c
 In get_player_intent and run_special_command functions, if failing to exactly match the user command with a known command, I use the find_most_similar_command to determine the most similar known command, and if the similarity is > 0.3 (some threshold I found), then I proceed with that most similar known command.
 
 Part 3:
-I used dependency parsing to detect the direct object in the player’s command, and then try to match that with a hardcoded verb-object command.
+I used dependency parsing to detect the direct object in the player’s command, and then try to match that with a hardcoded verb-object command. 
+In parse_command function, before doing anything else, I first create the verb_object pair list from the command. If the list is not empty, I set the command to be the first tuple joined with spaces and proceed from there.
 
 It works for some commands but not others: 
 
