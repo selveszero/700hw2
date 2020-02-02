@@ -8,28 +8,49 @@ Part 3:
 I used dependency parsing to detect the direct object in the player’s command, and then try to match that with a hardcoded verb-object command.
 
 It works for some commands but not others: 
+
   You wake up in a classroom full of students.
+  
   Exits: Vault window, Go door
+  
   You see: 
+  
   a plastic bag in the trash can
+  
   a wallet right in front of you
+  
   >take the large plastic bag from trash can
+  
   Sentence: 
+  
   take the large plastic bag from trash can
+  
   You take the bag.
+  
   >take the black wallet
+  
   Sentence: 
+  
   take the black wallet
+  
   You take the wallet.
+  
   >go through the door
+  
   Sentence: 
+  
   go through the door
+  
   I'm not sure what you want to do.
 
 But this works:
+
   >go the door
+  
   Sentence: 
+  
   go the door
+  
   You are in the hallway of the building.
   
 Namely, if the verb is followed by a preposition, there will be no verb_object pair found using the function from part 3. 
