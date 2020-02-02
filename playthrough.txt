@@ -1,4 +1,7 @@
-action_castle_improved:
+action_castle: 
+take pole, out, pick rose, s, catch fish with pole, n, n, up, take branch, down, e, give fish to troll, e,  hit guard with branch, get key, e, take candle, w, down, light lamp, down, light candle, read runes, take crown, up, up, up, unlock door, up, give rose to princess, look, propose to the princess, wear crown, down, down, e, e, sit on throne
 
-my_game_improved:
+(need to type "sit on throne" separately from the previous commands for the END OF GAME to render)
 
+my_game:
+take plastic bag, go door, throw plastic bag at student, go straight, eat food
